@@ -1,0 +1,69 @@
+$white: #fff 
+$font: #979797
+
+$small: 320px
+$medium: 768px
+
+.aboutWrapper  
+    background-color: $white 
+    border-radius: 10px 
+    font-family: 'Open Sans', sans-serif 
+    padding: 2vw
+    max-width: 80vw
+    margin: auto
+    .aboutTitle 
+        text-transform: uppercase
+        margin: 0
+        @media (max-width: $medium)
+            text-align: center
+            margin-top: 3vh
+    a  
+        text-decoration: none 
+        color: $font
+        &:visited 
+            color: $font
+    .aboutReviews  
+        margin: 9vh 0
+        display: flex 
+        justify-content: space-around 
+        flex-wrap: wrap        
+        @media (max-width: $medium)
+            flex-direction: column
+            align-items: center
+        .reviewWrapper 
+            max-width: 300px
+            min-height: 100px
+            display: flex
+            flex-direction: column
+            justify-content: space-between 
+            @media (max-width: $medium)
+                margin: 2vh
+            p
+                margin: 0
+                text-align: center
+            > svg
+                width: 120px
+                display: flex
+                margin: auto
+            .ratingWrapper
+                position: relative
+                .fillStarsWrapper
+                    position: absolute
+                    display: flex
+                    overflow: hidden
+                    .fillStarWrapper
+                        border-radius: 5px
+                        padding: 4px
+                        margin: 3px
+                        .star
+                            color: #fff
+                .starsWrapper
+                    display: flex
+                    .starWrapper
+                        border-radius: 5px
+                        padding: 4px
+                        margin: 3px
+                        background: #979797
+                        .star
+                            color: #fff
+    
